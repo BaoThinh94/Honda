@@ -1,0 +1,104 @@
+#vehicles {
+    background-color: rgba(0, 67, 108, 0.8);
+    .container-config {
+        padding: 0 10%;
+    }
+    .vehicles__top {
+        padding: $pd-3 0;
+        background-color: $color-white;
+        ul {
+            margin: 0;
+            li {
+                list-style: none;
+                a {
+                    padding: $pd-1 $pd-4;
+                    border-right: 0.15rem solid #eaeaea;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    color: $color-dark-blue-200;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-blue-200;
+                    }
+                }
+            }
+            .active {
+                a {
+                    text-decoration: underline;
+                    color: $color-blue-200;
+                }
+            }
+        }
+    }
+    .vehicles__bottom {
+        background-color: $color-grey;
+        padding: $pd-6;
+
+        .vehicles__content {
+            .vehivles__title {
+                h1 {
+                    background-color: $color-grey;
+                    position: relative;
+                    top: -2.7rem;
+                    padding: 0 $pd-1;
+                    color: $color-dark-blue-200;
+                    font-weight: bold;
+                    font-size: 2.4rem;
+                    i {
+                        font-size: 1.2rem;
+                        position: relative;
+                        top: -5px;
+                    }
+                    span {
+                        font-weight: normal;
+                    }
+                }
+            }
+
+            .vehivles__item {
+                h2{
+                    font-size: $font-size-2;
+                    font-weight: $font-weight-bold;
+                    margin-bottom: $mg-1;
+                    color: $color-dark-blue-200;
+                }
+                h3{
+                    font-size: $font-size-3;
+                    font-weight: $font-weight-normal;
+                    color: $color-dark-blue-200;
+                }
+                p{
+                    font-size: $font-size-1;
+                    font-weight: $font-weight-normal;
+                    margin-bottom: $mg-1;
+                    color: $color-dark-blue-200;
+                }
+                .vehicles__img_hover {
+                    display: none;
+                }
+                .btn-blue{
+                    padding: $pd-1 $pd-5;
+                    border-radius: 40px;
+                    color: $color-white;
+                    background-color: $color-blue-200;
+                    border: 2px solid $color-blue-200;
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size-1;
+                    transition: all .3s;
+                    &:hover{
+                        color: $color-blue-100;
+                        background-color: $color-white;
+                    }
+                }
+                &:hover {
+                    .vehicles__img {
+                        display: none;
+                    }
+                    .vehicles__img_hover {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
