@@ -8,6 +8,9 @@ html {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #007cc3;
 }
 
@@ -191,6 +194,10 @@ html {
   font-weight: normal;
 }
 
+#vehicles .vehicles__bottom .vehicles__content .vehivles__item {
+  margin-bottom: 30px;
+}
+
 #vehicles .vehicles__bottom .vehicles__content .vehivles__item h2 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -215,7 +222,75 @@ html {
   display: none;
 }
 
-#vehicles .vehicles__bottom .vehicles__content .vehivles__item .btn-blue {
+#vehicles .vehicles__bottom .vehicles__content .vehivles__item:hover .vehicles__img {
+  display: none;
+}
+
+#vehicles .vehicles__bottom .vehicles__content .vehivles__item:hover .vehicles__img_hover {
+  display: block;
+}
+
+#img-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehivles__item:hover > #img-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3C4C5C), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#3C4C5C, #f5f5f5, #f5f5f5);
+}
+
+#img-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehivles__item:hover > #img-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5E5E5E), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#5E5E5E, #f5f5f5, #f5f5f5);
+}
+
+#img-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehivles__item:hover > #img-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#14409A), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#14409A, #f5f5f5, #f5f5f5);
+}
+
+#img-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehivles__item:hover > #img-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C0BAB5), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#C0BAB5, #f5f5f5, #f5f5f5);
+}
+
+#img-5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehivles__item:hover > #img-5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5C5C5C), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#5C5C5C, #f5f5f5, #f5f5f5);
+}
+
+#img-6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehivles__item:hover > #img-6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#33569C), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#33569C, #f5f5f5, #f5f5f5);
+}
+
+.btn-big-blue {
   padding: 6px 30px;
   border-radius: 40px;
   color: #fff;
@@ -223,20 +298,29 @@ html {
   border: 2px solid #2198dc;
   font-weight: bold;
   font-size: 1.4rem;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-#vehicles .vehicles__bottom .vehicles__content .vehivles__item .btn-blue:hover {
+.btn-big-blue:hover {
   color: #007cc3;
   background-color: #fff;
 }
 
-#vehicles .vehicles__bottom .vehicles__content .vehivles__item:hover .vehicles__img {
-  display: none;
+.btn-big-white {
+  padding: 6px 30px;
+  border-radius: 40px;
+  color: #007cc3;
+  background-color: #fff;
+  border: 2px solid #2198dc;
+  font-weight: bold;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-#vehicles .vehicles__bottom .vehicles__content .vehivles__item:hover .vehicles__img_hover {
-  display: block;
+.btn-big-white:hover {
+  color: #fff;
+  background-color: #2198dc;
 }
 /*# sourceMappingURL=main.css.map */

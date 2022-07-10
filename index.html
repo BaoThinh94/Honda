@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -96,7 +99,7 @@
                         <li><a href="">FUTURE</a></li>
                     </ul>
                 </div>
-                <div class="vehicles__bottom">
+                <div class="vehicles__bottom" id ="vehicles__bottom">
                     <div class="vehicles__content">
                         <div class="vehivles__title text-center">
                             <hr class="line" size="2">
@@ -106,8 +109,8 @@
                         </div>
                         <div class="vehivles__detail">
                             <div class="row">
-                                <div class="vehivles__item col4">
-                                    <div>
+                                <div class="vehivles__item col-4">
+                                    <div id="img-1">
                                         <img class="img-fluid vehicles__img" src="./img/xe-1.png" alt="">
                                         <img class="img-fluid vehicles__img_hover" src="./img/xe-1-hover.png" alt="">
                                     </div>
@@ -125,9 +128,124 @@
                                         </div>
                                     </div>
                                     <div class="vehivles__button text-center">
-                                        <button class="btn-blue">EXPLORE</button>
-                                        <button>ALIBABA</button>
-                                    </div>                                
+                                        <button class="btn-big-blue">EXPLORE</button>
+                                        <button class="btn-big-white">BUILD</button>
+                                    </div>
+                                </div>
+                                <div class="vehivles__item col-4">
+                                    <div id="img-2">
+                                        <img class="img-fluid vehicles__img" src="./img/xe-2.png" alt="">
+                                        <img class="img-fluid vehicles__img_hover" src="./img/xe-2-hover.png" alt="">
+                                    </div>
+                                    <h2 class="text-center">Civic Sedan</h2>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <h3>$18,810</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                        <div>
+                                            <h3>40/28</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                    </div>
+                                    <div class="vehivles__button text-center">
+                                        <button class="btn-big-blue">EXPLORE</button>
+                                        <button class="btn-big-white">BUILD</button>
+                                    </div>
+                                </div>
+                                <div class="vehivles__item col-4">
+                                    <div id="img-3">
+                                        <img class="img-fluid vehicles__img" src="./img/xe-3.png" alt="">
+                                        <img class="img-fluid vehicles__img_hover" src="./img/xe-3-hover.png" alt="">
+                                    </div>
+                                    <h2 class="text-center">Civic Sedan</h2>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <h3>$18,810</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                        <div>
+                                            <h3>40/28</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                    </div>
+                                    <div class="vehivles__button text-center">
+                                        <button class="btn-big-blue">EXPLORE</button>
+                                        <button class="btn-big-white">BUILD</button>
+                                    </div>
+                                </div>
+                                <div class="vehivles__item col-4">
+                                    <div id="img-4">
+                                        <img class="img-fluid vehicles__img" src="./img/xe-4.png" alt="">
+                                        <img class="img-fluid vehicles__img_hover" src="./img/xe-4-hover.png" alt="">
+                                    </div>
+                                    <h2 class="text-center">Civic Sedan</h2>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <h3>$18,810</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                        <div>
+                                            <h3>40/28</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                    </div>
+                                    <div class="vehivles__button text-center">
+                                        <button class="btn-big-blue">EXPLORE</button>
+                                        <button class="btn-big-white">BUILD</button>
+                                    </div>
+                                </div>
+                                <div class="vehivles__item col-4">
+                                    <div id="img-5">
+                                        <img class="img-fluid vehicles__img" src="./img/xe-2.png" alt="">
+                                        <img class="img-fluid vehicles__img_hover" src="./img/xe-2-hover.png" alt="">
+                                    </div>
+                                    <h2 class="text-center">Civic Sedan</h2>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <h3>$18,810</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                        <div>
+                                            <h3>40/28</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                    </div>
+                                    <div class="vehivles__button text-center">
+                                        <button class="btn-big-blue">EXPLORE</button>
+                                        <button class="btn-big-white">BUILD</button>
+                                    </div>
+                                </div>
+                                <div class="vehivles__item col-4">
+                                    <div id="img-6">
+                                        <img class="img-fluid vehicles__img" src="./img/xe-3.png" alt="">
+                                        <img class="img-fluid vehicles__img_hover" src="./img/xe-3-hover.png" alt="">
+                                    </div>
+                                    <h2 class="text-center">Civic Sedan</h2>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <h3>$18,810</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                        <div>
+                                            <h3>40/28</h3>
+                                            <p>Staring</p>
+                                            <p>MSRP</p>
+                                        </div>
+                                    </div>
+                                    <div class="vehivles__button text-center">
+                                        <button class="btn-big-blue">EXPLORE</button>
+                                        <button class="btn-big-white">BUILD</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -142,10 +260,20 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+
     <script src="./js/popper.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+
+    <script>
+        $('#vehicles__bottom').mCustomScrollbar({
+            theme:'dark'
+        });
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
-@mixin button {
-    
+.btn-big-blue{
+    @include styleButton($pd-1 $pd-5, $color-white, $color-blue-200, $color-blue-200, $color-blue-100, $color-white);
+}
+
+.btn-big-white{
+    @include styleButton($pd-1 $pd-5, $color-blue-100, $color-white, $color-blue-200, $color-white, $color-blue-200);
 }
