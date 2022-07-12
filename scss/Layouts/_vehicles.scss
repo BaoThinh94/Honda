@@ -1,4 +1,5 @@
 #vehicles {
+    position: relative;
     background-color: rgba(0, 67, 108, 0.8);
     .container-config {
         padding: 0 10%;
@@ -33,7 +34,7 @@
     .vehicles__bottom {
         background-color: $color-grey;
         padding: $pd-6;
-
+        max-height: 700px;
         .vehicles__content {
             .vehivles__title {
                 h1 {
@@ -57,18 +58,18 @@
 
             .vehivles__item {
                 margin-bottom: $mg-3;
-                h2{
+                h2 {
                     font-size: $font-size-2;
                     font-weight: $font-weight-bold;
                     margin-bottom: $mg-1;
                     color: $color-dark-blue-200;
                 }
-                h3{
+                h3 {
                     font-size: $font-size-3;
                     font-weight: $font-weight-normal;
                     color: $color-dark-blue-200;
                 }
-                p{
+                p {
                     font-size: $font-size-1;
                     font-weight: $font-weight-normal;
                     margin-bottom: $mg-1;
@@ -88,4 +89,37 @@
             }
         }
     }
+    .vehicles__close {
+        background-color: $color-grey;
+        position: absolute;
+        left: 90%;
+        padding: $pd-2 0;
+        color: $color-blue-100;
+        width: 60px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        cursor: pointer;
+        .vehicles__circle {
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            border: 1px solid $color-blue-100;
+            border-radius: 50%;
+            margin: auto;
+            i {
+                font-size: $font-size-1;
+                line-height: 25px;
+            }
+        }
+        p {
+            font-weight: $font-weight-bold;
+            font-size: $font-size-1;
+        }
+    }
+}
+
+.hide-vehicles{
+    // display: none;
+    transform: translateY(-109%);
+    transition: all .5s;
 }

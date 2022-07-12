@@ -2,8 +2,9 @@
     position: fixed;
     top:0;
     left:0;
-    background-color: $color-blue-100;
+    width: 100%;
     #navbar {
+        background-color: $color-blue-100;
         .nav_border {
             border-left: 1px solid #4f91ca;
             border-right: 1px solid #4f91ca;
@@ -96,3 +97,9 @@
         }
     }
 }
+
+#navbar > .active{
+	color:$color-blue-200 !important;
+	background-color:$color-white !important;
+}
+
