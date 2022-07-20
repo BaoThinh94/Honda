@@ -49,7 +49,6 @@ html {
 }
 
 #header #navbar .nav_menu:after {
-  display: none;
   content: "";
   background-color: #fff;
   width: 100%;
@@ -71,7 +70,6 @@ html {
 }
 
 #header #navbar .nav_menu:hover:after {
-  display: none;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -164,8 +162,51 @@ html {
   color: #fff;
 }
 
-.dropdown-toggle::after {
+.hide-submenu {
   display: none;
+}
+
+#shoppingtool {
+  padding: 30px 30px;
+  position: fixed;
+  top: 63px;
+  left: 245px;
+  right: 0;
+  width: 50%;
+  -webkit-box-shadow: 1px 20px 70px -10px black;
+          box-shadow: 1px 20px 70px -10px black;
+}
+
+#shoppingtool .shoppingtool_top .shoppingtool_menu {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #00324f;
+  border-right: 1px solid #000;
+}
+
+#shoppingtool .shoppingtool_top .shoppingtool_menu i {
+  font-size: 4rem;
+}
+
+#shoppingtool .shoppingtool_top .shoppingtool_menu p {
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+#shoppingtool .shoppingtool_top .shoppingtool_menu:hover {
+  color: #23527c;
+}
+
+#shoppingtool .shoppingtool_top .shoppingtool_menu:last-child {
+  border: none;
+}
+
+#shoppingtool .shoppingtool_bottom a {
+  color: #007cc0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 15px;
 }
 
 #vehicles {
@@ -306,7 +347,11 @@ html {
   font-size: 1.4rem;
 }
 
-.hide-vehicles {
+.hide-submenu {
+  display: none;
+}
+
+.dropdown-toggle::after {
   display: none;
 }
 

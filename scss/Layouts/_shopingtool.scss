@@ -1,0 +1,41 @@
+#shoppingtool {
+    padding: $pd-5 $pd-5;
+    position: fixed;
+    top: 63px;
+    left: 245px;
+    right: 0;
+    width: 50%;
+    box-shadow: 1px 20px 70px -10px black;
+    .shoppingtool_top {
+        .shoppingtool_menu {
+            // padding: $pd-3 $pd-2;
+            cursor: pointer;
+            text-align: center;
+            font-size: $font-size-1;
+            color: $color-dark-blue-200;
+            border-right: 1px solid $color-black; 
+            i {
+                font-size: $font-size-5;
+            }
+            p{
+                margin-top: $mg-2;
+                white-space: nowrap;
+            }
+            &:hover{
+                color: $color-dark-blue-300;
+            }
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+    .shoppingtool_bottom{
+        a{
+            color: $color-blue-400;
+            font-size: $font-size-1;
+            font-weight: $font-weight-bold;
+            padding: $pd-2;
+        }
+        
+    }
+}
