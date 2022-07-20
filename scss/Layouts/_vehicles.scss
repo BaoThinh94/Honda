@@ -1,10 +1,15 @@
 #vehicles {
-    position: relative;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    right: 0;
+
     background-color: rgba(0, 67, 108, 0.8);
     .container-config {
         padding: 0 10%;
     }
     .vehicles__top {
+        width: 100%;
         padding: $pd-3 0;
         background-color: $color-white;
         ul {
@@ -21,10 +26,12 @@
                     &:hover {
                         color: $color-blue-200;
                     }
+                    
                 }
+                
             }
-            .active {
-                a {
+            .active{
+                a{
                     text-decoration: underline;
                     color: $color-blue-200;
                 }
@@ -92,6 +99,7 @@
     .vehicles__close {
         background-color: $color-grey;
         position: absolute;
+        top: 0;
         left: 90%;
         padding: $pd-2 0;
         color: $color-blue-100;
@@ -118,8 +126,7 @@
     }
 }
 
-.hide-vehicles{
-    // display: none;
-    transform: translateY(-109%);
-    transition: all .5s;
+.hide-vehicles {
+    display: none;
+    // transform: translateY(-100%);
 }
