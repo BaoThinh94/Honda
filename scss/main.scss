@@ -1,10 +1,17 @@
-@import './Base/reset';
 @import './Helpers/variable';
-@import './Layouts/header';
-@import './Layouts/shopingtool';
-@import '././Layouts/vehicles';
-@import '././Components/customize';
 @import './Helpers/mixin';
 @import './Helpers/function';
+@import './Helpers/normalize';
 @import './Components/button';
+@import './Base/reset';
+@import './Layouts/header';
+@import './Layouts/shopingtool';
+@import './Layouts/vehicles';
+@import './Layouts/owners';
+@import './Layouts/search';
+@import './Components/customize';
+
+
+
+
 // Biến

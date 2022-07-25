@@ -3,7 +3,7 @@
     top: 63px;
     left: 0;
     right: 0;
-
+    z-index: -1;
     background-color: rgba(0, 67, 108, 0.8);
     .container-config {
         padding: 0 10%;
@@ -99,7 +99,7 @@
     .vehicles__close {
         background-color: $color-grey;
         position: absolute;
-        top: 0;
+        top: 63px;
         left: 90%;
         padding: $pd-2 0;
         color: $color-blue-100;

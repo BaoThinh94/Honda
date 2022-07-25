@@ -8,7 +8,7 @@
     #navbar {
         margin: 0;
         padding: 0;
-        background-color: $color-blue-100;
+        background-color:$color-blue-100;
         .nav_border {
             border-left: 1px solid #4f91ca;
             border-right: 1px solid #4f91ca;
@@ -17,7 +17,8 @@
             border-right: 1px solid #4f91ca;
         }
         .nav_img {
-            padding: 0 $pd-4;
+            padding: 0 $pd-2;
+            margin: 0;
         }
         .nav_menu {
             display: inline-block;
@@ -29,6 +30,7 @@
             font-size: 1.4rem;
             z-index: 1;
             &:after {
+                display: none;
                 content: "";
                 background-color: $color-white;
                 width: 100%;
@@ -49,6 +51,14 @@
                 }
             }
         }
+        .nav-item{
+            list-style: none;
+        }
+        .nav-item >.active{
+            background-color: $color-white;
+            color: $color-blue-200;
+        }
+
     }
     .nav__right {
         position: relative;

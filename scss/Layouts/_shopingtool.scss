@@ -2,10 +2,11 @@
     padding: $pd-5 $pd-5;
     position: fixed;
     top: 63px;
-    left: 245px;
+    left: 220px;
     right: 0;
     width: 50%;
     box-shadow: 1px 20px 70px -10px black;
+    z-index: -1;
     .shoppingtool_top {
         .shoppingtool_menu {
             // padding: $pd-3 $pd-2;
@@ -13,7 +14,7 @@
             text-align: center;
             font-size: $font-size-1;
             color: $color-dark-blue-200;
-            border-right: 1px solid $color-black; 
+            border-right: 2px solid $color-grey-100;
             i {
                 font-size: $font-size-5;
             }

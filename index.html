@@ -17,6 +17,9 @@
     <!-- mCustomscrollbar CSS -->
     <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
 
+    <!-- animation -->
+    <link rel="stylesheet" href="./css/animate.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -27,14 +30,17 @@
         <nav class="navbar navbar-expand-md" id="navbar">
             <div class="nav_left">
                 <ul class="d-flex navbar-nav">
-                    <li class="d-flex align-items-center"><a href="#" class="navbar-brand nav_img"><img
+                    <li class="d-flex align-items-center nav-item"><a href="#" class="navbar-brand nav_img"><img
                                 class="img-fluid" src="./img/logo.png" alt=""></a></li>
-                    <li><a href="#" id="vehicles-nav" class="nav_border nav_menu">VEHICLES<i
-                                class="fa fa-angle-down"></i></a>
+                    <li class="nav-item">
+                            <a href="#" id="vehicles-nav"
+                            class="nav_border nav_menu d-none d-md-block">VEHICLES <i class="fa fa-angle-down"></i></a>
+                            <a href="#" id="vehicles-nav"
+                            class="nav_border nav_menu d-inline d-md-none">Vehicles</a>
                         <div class="sub-menu">
-                            <div id="vehicles" class="hide-submenu">
+                            <div id="vehicles" class="hide-submenu ">
                                 <div class="container-fluid container-config">
-                                    <div class="vehicles__top">
+                                    <div class="vehicles__top animated">
                                         <ul class="d-flex align-items-center justify-content-center">
                                             <li id="car-nav" class="active"><a href="#">CARS</a></li>
                                             <li id="crossover-nav"><a href="#">CROSSOVER & SUV</a></li>
@@ -49,7 +55,7 @@
                                         </div>
                                         <p class="mb-0">CLOSE</p>
                                     </div>
-                                    <div class="vehicles__bottom" id="vehicles__bottom">
+                                    <div class="vehicles__bottom animated" id="vehicles__bottom">
                                         <div class="vehicles__content" id="car">
                                             <div class="vehivles__title text-center">
                                                 <hr class="line" size="2">
@@ -865,10 +871,10 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="#" id="shoppingtool-nav" class="nav_border nav_menu">SHOPPING TOOLS <i
+                    <li class="nav-item"><a href="#" id="shoppingtool-nav" class="nav_border nav_menu">SHOPPING TOOLS <i
                                 class="fa fa-angle-down"></i></a>
                         <div class="sub-menu">
-                            <div class="hide-submenu" id="shoppingtool">
+                            <div class="hide-submenu animated" id="shoppingtool">
                                 <div class="shoppingtool_top">
                                     <div class="row">
                                         <div class="col shoppingtool_menu"><i class="fa fa-tools"></i>
@@ -890,14 +896,12 @@
                                 </div>
                                 <hr>
                                 <div class="shoppingtool_bottom d-flex justify-content-center">
-                                        <div><a href="">Lease Or Finance</a></div>
-                                        <div><a href="">Trade in Value</a></div>
-                                        <div><a href="">Buyer's Guide</a></div>
-                                        <div><a href="">Apply For Financing</a></div>
-                                    </div>
+                                    <div><a href="">Lease Or Finance</a></div>
+                                    <div><a href="">Trade in Value</a></div>
+                                    <div><a href="">Buyer's Guide</a></div>
+                                    <div><a href="">Apply For Financing</a></div>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                 </ul>
@@ -906,44 +910,67 @@
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
-
             <div class="nav__right collapse navbar-collapse ml-auto" id="navbarScroll">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link nav_menu " href="#"><i class="fa fa-map-marker"></i> Dealers</a>
+                        <a class="nav-link nav_menu" href="#"><i class="fa fa-map-marker"></i> Dealers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav_menu" href="#">Owners</a>
+                        <a class="nav-link nav_menu" id="owners-nav" href="#">Owners</a>
+                        <div class="sub-menu">
+                            <div id="owners" class="hide-submenu animated">
+                                <div class="row">
+                                    <div class="col-7 owners_left">
+                                        <ul>
+                                            <li><a href=""><span>Owners Site</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                            <li><a href=""><span>Owner's Manual & Warranties</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                            <li><a href=""><span>Schedule Service</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                            <li><a href=""><span>Shop Parts & Accessories</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                            <li><a href=""><span>Certified Body Shop Locator</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-5 owners_right">
+                                        <ul>
+                                            <li><a href=""><span>Roadside Assistance</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                            <li><a href=""><span>Pay My Bill</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                            <li><a href=""><span>Recalls</span><i
+                                                        class="fa fa-external-link-alt"></i></a>
+                                            </li>
+                                            <li><a href=""><span>Customer Service</span><i
+                                                        class="fa fa-external-link-alt"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-toggle="dropdown" aria-expanded="false">
-                            Link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link nav_menu " href="#">Discovers</a>
+                        <a class="nav-link nav_menu" href="#">Discovers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav_border nav_menu " href="#">Enghlish</a>
+                        <a class="nav-link nav_border nav_menu" href="#">Enghlish</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav_menu" href="#"><i class="fa fa-search"></i></a>
+                        <a class="nav-link nav_menu" id="search-nav" href="#"><i class="fa fa-search"></i></a>
+                        <div class="sub-menu">
+                            <div id="search" class="hide-submenu animated">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Search for anything Honda">
+                                <button class="btn-big-white search_btn">SEARCH</button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </nav>
-
     </header>
-
 
     <script src="./js/jquery.min.js"></script>
 
@@ -1001,48 +1028,148 @@
         })
 
         var count = "";
-        $('.navbar-nav li a').click(function () {
-            var navId = $(this).attr("id");
-            switch (navId) {
-                case "vehicles-nav":
-                    $('.vehicles__top ul li').removeClass('active');
+        $('.navbar-nav .nav-item .nav_menu').click(function () {
+            if (count === "") {
+                count = $(this).attr('id');
+                $(this).addClass('active');
+                if (count === "vehicles-nav") {
+                    $('.vehicles__top').removeClass('fadeOutUp');
+                    $('.vehicles__bottom').removeClass('fadeOutDown');
+                    $('.vehicles__top').addClass('fadeInDown');
+                    $('.vehicles__bottom').addClass('fadeInUp');
+                    $('#vehicles').removeClass('hide-submenu');
+                } else if (count === "shoppingtool-nav") {
+                    shoppingtool
+                    $('#shoppingtool').removeClass('fadeOutUp');
+                    $('#shoppingtool').addClass('fadeInDown');
+                    $('#shoppingtool').removeClass('hide-submenu');
+                } else if (count === "shoppingtool-nav") {
+                    shoppingtool
+                    $('#shoppingtool').removeClass('fadeOutUp');
+                    $('#shoppingtool').addClass('fadeInDown');
+                    $('#shoppingtool').removeClass('hide-submenu');
+                }
+                else if (count === "owners-nav") {
+                    shoppingtool
+                    $('#owners').removeClass('fadeOutUp');
+                    $('#owners').addClass('fadeInDown');
+                    $('#owners').removeClass('hide-submenu');
+                } else if (count === "search-nav") {
+                    shoppingtool
+                    $('#search').removeClass('fadeOutUp');
+                    $('#search').addClass('fadeInDown');
+                    $('#search').removeClass('hide-submenu');
+                }
+            }
+            else {
+                if (count === $(this).attr('id')) {
+                    $(this).removeClass('active');
+                    if (count === "vehicles-nav") {
+                        $('.vehicles__top').addClass('fadeOutUp');
+                        $('.vehicles__bottom').addClass('fadeOutDown');
+                        setTimeout(function () {
+                            $('#vehicles').addClass('hide-submenu');
+                        }, 300)
+                        count = "";
+                    } else if (count === "shoppingtool-nav") {
+                        $('#shoppingtool').removeClass('fadeInDown');
+                        $('#shoppingtool').addClass('fadeOutUp');
+                        setTimeout(function () {
+                            $('#shoppingtool').addClass('hide-submenu');
+                        }, 300)
+                        count = "";
+                    } else if (count === "owners-nav") {
+                        $('#owners').removeClass('fadeInDown');
+                        $('#owners').addClass('fadeOutUp');
+                        setTimeout(function () {
+                            $('#owners').addClass('hide-submenu');
+                        }, 300)
+
+                        count = "";
+                    } else if (count === "search-nav") {
+                        $('#search').removeClass('fadeInDown');
+                        $('#search').addClass('fadeOutUp');
+                        setTimeout(function () {
+                            $('#search').addClass('hide-submenu');
+                        }, 300)
+
+                        count = "";
+                    }
+
+                } else {
+                    $('.navbar-nav .nav-item .nav_menu').removeClass('active');
+                    if (count === "vehicles-nav") {
+                        $('.vehicles__top').removeClass('fadeInDown');
+                        $('.vehicles__bottom').removeClass('fadeInUp');
+                        $('.vehicles__top').addClass('fadeOutUp');
+                        $('.vehicles__bottom').addClass('fadeOutDown');
+                        setTimeout(function () {
+                            $('#vehicles').addClass('hide-submenu');
+                        }, 300)
+                        count = "";
+
+                    } else if (count === "shoppingtool-nav") {
+                        $('#shoppingtool').removeClass('fadeInDown');
+                        $('#shoppingtool').addClass('fadeOutUp');
+                        setTimeout(function () {
+                            $('#shoppingtool').addClass('hide-submenu');
+                        }, 300)
+
+                        count = "";
+                    } else if (count === "owners-nav") {
+                        $('#owners').removeClass('fadeInDown');
+                        $('#owners').addClass('fadeOutUp');
+                        setTimeout(function () {
+                            $('#owners').addClass('hide-submenu');
+                        }, 300)
+                        count = "";
+                    } else if (count === "search-nav") {
+                        $('#search').removeClass('fadeInDown');
+                        $('#search').addClass('fadeOutUp');
+                        setTimeout(function () {
+                            $('#search').addClass('hide-submenu');
+                        }, 300)
+                        count = "";
+                    }
+
+
+                    count = $(this).attr('id');
                     $(this).addClass('active');
-                    move("#car");
-                    break;
-                case "crossover-nav":
-                    $('.vehicles__top ul li').removeClass('active');
-                    $(this).addClass('active');
-                    move("#crossover");
-                    break;
-                
-            };
-            // if (count === "") {
-            //     count = $(this).attr('id');
-            //     $(this).addClass('active');
-            //     if (count === "vehicles-nav") {
-            //         $('#vehicles').removeClass('hide-submenu');
-            //     }
-            // }
-            // else {
-            //     if (count === $(this).attr('id')) {
-            //         if (count === "vehicles-nav") {
-            //             $('#vehicles').addClass('hide-submenu');
-            //         }
-            //         $(this).removeClass('active');
-            //         count = "";
-            //     }
-            //     else {
-            //         $('.navbar-nav li a').removeClass('active');
-            //         $(this).addClass('active');
-            //         count = $(this).attr('id');
-            //     }
-            // }
-            // console.log($(this).attr('id'));
+                    if (count === "vehicles-nav") {
+                        $('.vehicles__top').removeClass('fadeOutUp');
+                        $('.vehicles__bottom').removeClass('fadeOutDown');
+                        $('.vehicles__top').addClass('fadeInDown');
+                        $('.vehicles__bottom').addClass('fadeInUp');
+                        $('#vehicles').removeClass('hide-submenu');
+                    } else if (count === "shoppingtool-nav") {
+                        $('#shoppingtool').removeClass('fadeOutUp');
+                        $('#shoppingtool').addClass('fadeInDown');
+                        $('#shoppingtool').removeClass('hide-submenu');
+                    } else if (count === "owners-nav") {
+                        shoppingtool
+                        $('#owners').removeClass('fadeOutUp');
+                        $('#owners').addClass('fadeInDown');
+                        $('#owners').removeClass('hide-submenu');
+                    } else if (count === "search-nav") {
+                        shoppingtool
+                        $('#search').removeClass('fadeOutUp');
+                        $('#search').addClass('fadeInDown');
+                        $('#search').removeClass('hide-submenu');
+                    }
+                }
+            }
+            console.log($(this).attr('id'));
         })
 
         let closeVehicle = () => {
-            $('#vehicles').addClass('hide-submenu');
-            $('#vehicles-nav').removeClass('active');
+            $('.navbar-nav .nav-item .nav_menu').removeClass('active');
+            $('.vehicles__top').removeClass('fadeInDown');
+            $('.vehicles__bottom').removeClass('fadeInUp');
+            $('.vehicles__top').addClass('fadeOutUp');
+            $('.vehicles__bottom').addClass('fadeOutDown');
+            setTimeout(function () {
+                $('#vehicles').addClass('hide-submenu');
+            }, 300)
             count = "";
         }
 

@@ -1,0 +1,33 @@
+#owners {
+    padding: $pd-5 $pd-5;
+    position: fixed;
+    top: 63px;
+    right: 6px;
+    width: 29%;
+    box-shadow: 1px 20px 70px -10px black;
+    z-index: -1;
+    .owners_left{
+        border-right: 2px solid $color-grey-100;
+        padding-right: $pd-5;
+        
+    }
+    .owners_right{
+        padding-left: $pd-5;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            margin-bottom: $mg-2 - 3;
+            a {
+                display: flex;
+                justify-content: space-between;
+                font-size: $font-size-1;
+                color: $color-blue-400;
+                white-space: nowrap;
+                font-weight: $font-weight-bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
