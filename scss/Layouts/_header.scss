@@ -4,11 +4,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     #navbar {
+        position: relative;
         margin: 0;
         padding: 0;
-        background-color:$color-blue-100;
+        background-color: $color-blue-100;
         .nav_border {
             border-left: 1px solid #4f91ca;
             border-right: 1px solid #4f91ca;
@@ -30,7 +31,6 @@
             font-size: 1.4rem;
             z-index: 1;
             &:after {
-                display: none;
                 content: "";
                 background-color: $color-white;
                 width: 100%;
@@ -51,84 +51,12 @@
                 }
             }
         }
-        .nav-item{
+        .nav-item {
             list-style: none;
         }
-        .nav-item >.active{
+        .nav-item > .active {
             background-color: $color-white;
             color: $color-blue-200;
-        }
-
-    }
-    .nav__right {
-        position: relative;
-        .navbar-nav {
-            .nav-item {
-                .dropdown-menu {
-                    position: absolute;
-                    left: -293px;
-                    padding: $pd-4;
-                    border: none;
-                    box-shadow: 1px 20px 70px -10px black;
-                    width: 440px;
-                    &::before {
-                        content: "";
-                        width: 23px;
-                        height: 23px;
-                        line-height: 25px;
-                        background-color: $color-white;
-                        position: absolute;
-                        top: -10px;
-                        transform: rotate(45deg);
-                        left: 350px;
-                    }
-                    .dropmenu_top {
-                        padding: 0.25rem 1.5rem;
-                        clear: both;
-                        .dropdown-item {
-                            color: $color-blue-200;
-                            padding: 0;
-                            font-weight: bold;
-                            white-space: normal;
-                            &:hover {
-                                background-color: $color-white;
-                            }
-                        }
-                        h3 {
-                            color: $color-dark-blue-200;
-                            font-size: 19.25px;
-                            font-weight: bold;
-                            margin-bottom: $mg-2;
-                        }
-                        .dropdown_left {
-                            width: 50%;
-                        }
-                        .dropdown_right {
-                            padding-left: $pd-3;
-                            width: 50%;
-                        }
-                    }
-                    li {
-                        list-style: none;
-                        margin-bottom: $mg-2 - 5;
-                    }
-                    .dropmenu_bottom {
-                        display: flex;
-                        justify-content: space-around;
-                        margin-top: $mg-3;
-                        padding: 0.25rem 1.5rem;
-                        i {
-                            width: 30px;
-                            height: 30px;
-                            background-color: #007cc3;
-                            border-radius: 50%;
-                            color: white;
-                            text-align: center;
-                            line-height: 30px;
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -139,4 +67,46 @@
 
 .hide-submenu {
     display: none;
+}
+
+//max-width: 992px
+@include responsive("large") {
+    #header {
+        #navbar {
+            .nav_img {
+                padding: 0;
+            }
+            .nav_menu {
+                padding: $pd-2;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 768px
+@include responsive("medium") {
+    #header {
+        #navbar {
+            .nav_img {
+                padding: 0 $pd-2;
+            }
+            .nav_menu {
+                padding: $pd-1 $pd-2;
+            }
+            .nav__right {
+                border-top: 1px solid $color-white;
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            border: none;
+                            padding: $pd-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

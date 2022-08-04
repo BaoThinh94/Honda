@@ -40,3 +40,16 @@
         
     }
 }
+
+
+
+//max-width: 768px
+@include responsive("medium") {
+    #shoppingtool {
+        position: static;
+        width: 100%;
+        background-color: $color-white;
+        padding: 0;
+        
+    }
+}

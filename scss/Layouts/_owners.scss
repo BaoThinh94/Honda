@@ -2,16 +2,15 @@
     padding: $pd-5 $pd-5;
     position: fixed;
     top: 63px;
-    right: 6px;
-    width: 29%;
+    right: 0;
+    width: 37%;
     box-shadow: 1px 20px 70px -10px black;
     z-index: -1;
-    .owners_left{
+    .owners_left {
         border-right: 2px solid $color-grey-100;
         padding-right: $pd-5;
-        
     }
-    .owners_right{
+    .owners_right {
         padding-left: $pd-5;
     }
 
@@ -27,6 +26,57 @@
                 white-space: nowrap;
                 font-weight: $font-weight-bold;
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+//max-width: 1373px
+@media screen and (max-width:1374px){
+    #owners{
+        min-width: 69%;
+    }
+}
+
+//max-width: 992x
+@include responsive("large") {
+    #owners {
+        top:53px;
+    }
+}
+
+//max-width: 768px
+@include responsive("medium") {
+    #owners {
+        position: static;
+        width: 100%;
+        background-color: $color-white;
+        padding: 0;
+        .owners_left{
+            border: none;
+        }
+        ul li {
+            margin: 0;
+            a {
+                padding: $pd-2;
+            }
+        }
+    }
+}
+
+//max-width: 576px
+@include responsive("small") {
+    #owners {
+        padding: 0 $pd-5;
+        .owners_left,
+        .owners_right {
+            padding: 0;
+        }
+        ul li {
+            margin: 0;
+            a {
+                padding: 0;
+                white-space: initial;
             }
         }
     }

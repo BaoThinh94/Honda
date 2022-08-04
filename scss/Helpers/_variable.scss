@@ -58,3 +58,12 @@ $vehicle-circle-size:25px;
 $box-shadow:1px 20px 70px -10px rgba(59,59,59,.63);
 $box-shadow-2:0 5px 10px 0 rgba(8,29,42,.08);
 $arrow-width:15px;
+
+//break points
+$breakpoints:(
+    'screen-1':1350px,
+    'extra-large':1200px,
+    'large':992px,
+    'medium':768px,
+    'small':576px,
+)
