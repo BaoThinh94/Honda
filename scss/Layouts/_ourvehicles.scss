@@ -1,0 +1,53 @@
+.ourvehicles {
+    h1 {
+        color: $color-dark-blue-200;
+        font-weight: $font-weight-300;
+        font-size: $font-size-4;
+        margin-bottom: $pd-9;
+        text-align: center;
+    }
+    .ourvehicles_slide {
+        .ourvehicles_indicators {
+            position: static;
+            margin: 0;
+            margin-bottom: $mg-2;
+            justify-content: space-around;
+            width: 75%;
+            li {
+                display: inline-block;
+                opacity: 1;
+                text-indent: 0;
+                height: 30px;
+                width: 15%;
+                color: red;
+                border: none;
+                margin: 0;
+                text-align: center;
+                color: $color-dark-blue-200;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-1;
+                padding: $pd-1 $pd-3;
+                border-radius: 4rem;
+                cursor: pointer;   
+            }
+            .active{
+                background-color:$color-blue-200;
+                color: $color-white;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    height: 30px;
+                    width: 30px;
+                    border-top: 15px solid $color-white;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    bottom: -48px;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

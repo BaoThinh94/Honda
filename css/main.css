@@ -907,7 +907,7 @@ html {
 
 .adv .adv_container .adv_row .adv_left {
   height: 350px;
-  background-image: url("../../img/our-vehicle-intro-1.jpg");
+  background-image: url("../img/our-vehicle-intro-1.jpg");
   background-size: cover;
   background-position: center center;
   background-clip: content-box;
@@ -940,7 +940,7 @@ html {
 
 .adv .adv_container .adv_row .adv_right {
   height: 350px;
-  background-image: url("../../img/our-vehicles-intro-2.jpg");
+  background-image: url("../img/our-vehicles-intro-2.jpg");
   background-size: cover;
   background-position: center center;
   background-clip: content-box;
@@ -1019,6 +1019,65 @@ html {
   .adv {
     margin-top: -360px;
   }
+}
+
+.ourvehicles h1 {
+  color: #00324f;
+  font-weight: 300;
+  font-size: 6rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.ourvehicles .ourvehicles_slide .ourvehicles_indicators {
+  position: static;
+  margin: 0;
+  margin-bottom: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75%;
+}
+
+.ourvehicles .ourvehicles_slide .ourvehicles_indicators li {
+  display: inline-block;
+  opacity: 1;
+  text-indent: 0;
+  height: 30px;
+  width: 15%;
+  color: red;
+  border: none;
+  margin: 0;
+  text-align: center;
+  color: #00324f;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 6px 20px;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.ourvehicles .ourvehicles_slide .ourvehicles_indicators .active {
+  background-color: #2198dc;
+  color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ourvehicles .ourvehicles_slide .ourvehicles_indicators .active::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-top: 15px solid #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  bottom: -48px;
+  z-index: 10;
 }
 
 .dropdown-toggle::after {
