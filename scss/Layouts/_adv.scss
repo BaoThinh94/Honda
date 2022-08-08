@@ -1,0 +1,166 @@
+.adv {
+    height: 400px;
+    margin-top: $mg-up-3;
+    .adv_container {
+        height: 100%;
+        padding: 0 $pd-8;
+        .adv_row {
+            height: 100%;
+            .adv_left {
+                height: 350px;
+                background-image: url("../../img/our-vehicle-intro-1.jpg");
+                background-size: cover;
+                background-position: center center;
+                background-clip: content-box;
+                text-align: center;
+                color: $color-white;
+                font-size: $font-size-1;
+                position: relative;
+                .adv_left_content {
+                    position: absolute;
+                    bottom: 10%;
+                    .adv_left_btn {
+                        padding: $pd-1 $pd-2;
+                    }
+                    h4 {
+                        margin-bottom: $mg-2;
+                        font-size: $font-size-2;
+                        font-weight: $font-weight-bold;
+                    }
+                    p {
+                        margin-bottom: $mg-3;
+                        font-weight: $font-weight-300;
+                        padding: 0 $pd-3;
+                    }
+                }
+            }
+            .adv_right {
+                height: 350px;
+                background-image: url("../../img/our-vehicles-intro-2.jpg");
+                background-size: cover;
+                background-position: center center;
+                background-clip: content-box;
+                text-align: left;
+                color: $color-white;
+                font-size: $font-size-2;
+                .adv_right_content {
+                    position: absolute;
+                    top: 30%;
+                    left: 5%;
+                    width: 38%;
+                    .adv_right_btn {
+                        padding: $pd-1 $pd-2;
+                    }
+                    h4 {
+                        margin-bottom: $mg-2;
+                        font-weight: $font-weight-bold;
+                        background: rgba(0, 67, 108, 0.8);
+                        display: inline-block;
+                        padding: $pd-1 $pd-2;
+                        font-size: $font-size-2;
+                    }
+                    p {
+                        margin-bottom: $mg-3;
+                        font-weight: $font-weight-bold;
+                        // padding: 0 $pd-3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//max-width: 992px and min-width: 768px
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .adv {
+        .adv_container {
+            .adv_row {
+                .adv_left {
+                    .adv_left_content {
+                        .adv_left_btn {
+                        }
+                        h4 {
+                        }
+                        p {
+                        }
+                    }
+                }
+                .adv_right {
+                    .adv_right_content {
+                        top: 20%;
+
+                        .adv_right_btn {
+                            font-size: $font-size-1 - 0.2;
+                            padding: $pd-1 $pd-1 - 3;
+                        }
+                        h4 {
+                            font-size: $font-size-1 - 0.2;
+                        }
+                        p {
+                            font-size: $font-size-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("medium") {
+    .adv {
+        .adv_container {
+            .adv_row {
+                .adv_left {
+                    margin-bottom: $mg-2;
+                }             
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 560px){
+    .adv {
+        margin-top: $mg-up-4;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .adv {
+        margin-top: $mg-up-4;
+        .adv_container {
+            .adv_row {
+                .adv_left {
+                    .adv_left_content {
+                        .adv_left_btn {
+                        }
+                        h4 {
+                        }
+                        p {
+                        }
+                    }
+                }
+                .adv_right {
+                    .adv_right_content {
+                        top: 10%;
+                        .adv_right_btn {
+                            font-size: $font-size-1 - 0.2;
+                            padding: $pd-1 $pd-1 - 3;
+                        }
+                        h4 {
+                        }
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 395px){
+    .adv {
+        margin-top: $mg-up-5;
+    }
+}

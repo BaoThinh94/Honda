@@ -5,3 +5,11 @@
 .btn-big-white{
     @include styleButton($pd-1 $pd-5, $color-blue-100, $color-white, $color-blue-200, $color-white, $color-blue-200);
 }
+
+.btn-big-red{
+    @include styleButton($pd-1 $pd-2, $color-white, $color-orange, $color-orange, $color-orange, $color-white);
+}
+
+.btn-big-blue-border-white{
+    @include styleButton($pd-1 $pd-5, $color-white, transparent, $color-white, $color-blue-100, $color-white);
+}

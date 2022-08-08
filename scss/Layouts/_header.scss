@@ -30,6 +30,9 @@
             padding: $pd-3 $pd-4;
             font-size: 1.4rem;
             z-index: 1;
+            .fa-angle-up{
+                transition: all .3s;
+            }
             &:after {
                 content: "";
                 background-color: $color-white;
@@ -57,6 +60,9 @@
         .nav-item > .active {
             background-color: $color-white;
             color: $color-blue-200;
+            .fa-angle-up{
+                transform: rotate(180deg);
+            }
         }
     }
 }
