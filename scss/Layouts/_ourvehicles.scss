@@ -17,8 +17,8 @@
                 display: inline-block;
                 opacity: 1;
                 text-indent: 0;
-                height: 30px;
-                width: 15%;
+                height: auto;
+                width: auto;
                 color: red;
                 border: none;
                 margin: 0;
@@ -28,15 +28,15 @@
                 font-size: $font-size-1;
                 padding: $pd-1 $pd-3;
                 border-radius: 4rem;
-                cursor: pointer;   
+                cursor: pointer;
             }
-            .active{
-                background-color:$color-blue-200;
+            .active {
+                background-color: $color-blue-200;
                 color: $color-white;
                 position: relative;
                 display: flex;
                 justify-content: center;
-                &::before{
+                &::before {
                     position: absolute;
                     content: "";
                     height: 30px;
@@ -49,5 +49,59 @@
                 }
             }
         }
+        .carousel-inner {
+            height: 580px;
+            .ourvehicles_item {
+                position: relative;
+                height: 95%;
+                .ourvehicles_item_top {
+                    position: absolute;
+                    top: 8%;
+                    left: 6%;
+                    width: 30%;
+                    color: white;
+                    > p {
+                        font-weight: $font-weight-bold;
+                        font-size: $font-size-1;
+                        span {
+                            font-weight: normal;
+                        }
+                    }
+                    img{
+                        transform: translateX(-15px);
+                    }
+                    .ourvehicles_caption {
+                        font-weight: $font-weight-300;
+                        margin-bottom: $mg-3;
+                    }
+                    .ourvehicles_smaillitem_top {
+                        margin-bottom: $mg-3;
+                        h2 {
+                            font-weight: $font-weight-300;
+                            font-size: $font-size-5;
+                        }
+                        p {
+                            font-weight: $font-weight-bold;
+                            font-size: $font-size-1;
+                        }
+                    }
+                }
+                .ourvehicles_item_bottom {
+                    position: absolute;
+                    bottom: 0;
+                    width: 50%;
+                    border-top: 1px solid $color-white;
+                    a {
+                        font-size: $font-size-1;
+                        font-weight: $font-weight-bold;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
     }
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 4%;
 }

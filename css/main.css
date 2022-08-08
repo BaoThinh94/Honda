@@ -110,6 +110,36 @@
   }
 }
 
+.ourvehicles-slider1 {
+  background-image: url("../img/slider-1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.ourvehicles-slider2 {
+  background-image: url("../img/slider-2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.ourvehicles-slider3 {
+  background-image: url("../img/slider-3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.ourvehicles-slider4 {
+  background-image: url("../img/slider-4.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.ourvehicles-slider5 {
+  background-image: url("../img/slider-5.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -1042,8 +1072,8 @@ html {
   display: inline-block;
   opacity: 1;
   text-indent: 0;
-  height: 30px;
-  width: 15%;
+  height: auto;
+  width: auto;
   color: red;
   border: none;
   margin: 0;
@@ -1078,6 +1108,73 @@ html {
   border-right: 15px solid transparent;
   bottom: -48px;
   z-index: 10;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner {
+  height: 580px;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item {
+  position: relative;
+  height: 95%;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  width: 30%;
+  color: white;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top > p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top > p span {
+  font-weight: normal;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top img {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top .ourvehicles_caption {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top .ourvehicles_smaillitem_top {
+  margin-bottom: 30px;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top .ourvehicles_smaillitem_top h2 {
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_top .ourvehicles_smaillitem_top p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  border-top: 1px solid #fff;
+}
+
+.ourvehicles .ourvehicles_slide .carousel-inner .ourvehicles_item .ourvehicles_item_bottom a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 4%;
 }
 
 .dropdown-toggle::after {

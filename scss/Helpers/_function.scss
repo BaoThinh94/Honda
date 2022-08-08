@@ -20,3 +20,18 @@
 
     }
 }
+
+@each $stt in (1) (2) (3) (4) (5) {
+    .ourvehicles-slider#{$stt} {
+        background-image: url("../img/slider-#{$stt}.jpg");
+        background-size: cover;
+        background-position: center center;
+        
+        // // srceen 768px
+        // @include responsive("medium") {
+        //     background-image: url("../img/./banner-#{$stt}-xs.jpg");
+        //     background-position: unset;
+        // }
+
+    }
+}
