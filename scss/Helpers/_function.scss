@@ -27,11 +27,11 @@
         background-size: cover;
         background-position: center center;
         
-        // // srceen 768px
-        // @include responsive("medium") {
-        //     background-image: url("../img/./banner-#{$stt}-xs.jpg");
-        //     background-position: unset;
-        // }
+        // srceen 768px
+        @include responsive("medium") {
+            background-image: url("../img/./slider-#{$stt}-xs.jpg");
+            background-position: unset;
+        }
 
     }
 }

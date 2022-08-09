@@ -67,7 +67,7 @@
                             font-weight: normal;
                         }
                     }
-                    img{
+                    img {
                         transform: translateX(-15px);
                     }
                     .ourvehicles_caption {
@@ -83,6 +83,11 @@
                         p {
                             font-weight: $font-weight-bold;
                             font-size: $font-size-1;
+                        }
+                    }
+                    .ourvehicles_item_button {
+                        .ourvehicles_btn {
+                            padding: $pd-1 $pd-5;
                         }
                     }
                 }
@@ -102,6 +107,102 @@
     }
 }
 
-.carousel-control-prev, .carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
     width: 4%;
+}
+
+//max-width: 992px
+@include responsive("large") {
+    .ourvehicles {
+        h1 {
+            font-size: $font-size-5;
+        }
+        .ourvehicles_slide {
+            .ourvehicles_indicators {
+                width: 100%;
+            }
+            .carousel-inner {
+                .ourvehicles_item {
+                    .ourvehicles_item_top {
+                        width: 38%;
+                        .ourvehicles_caption {
+                            font-size: $font-size-1 - 0.2;
+                        }
+                        .ourvehicles_smaillitem_top {
+                            h2 {
+                                font-size: $font-size-3;
+                            }
+                            // p {
+                            //     font-weight: $font-weight-bold;
+                            //     font-size: $font-size-1;
+                            // }
+                        }
+                    }
+                    .ourvehicles_item_bottom {
+                        border: none;
+                        bottom: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.transform-rotate{
+    transform:rotate(180deg);
+}
+//max-width: 768px
+@include responsive("medium") {
+    .ourvehicles {
+        .ourvehicles_slide {
+            position: relative;
+            .ourvehicles_indicators_md {
+                
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -5%;
+                z-index: 9;
+                width: 60%;
+                background-color: $color-white;
+                box-shadow: $box-shadow;
+                .ourvehicles_indicators_md_top {
+                    padding: 0 $pd-2;
+                    h1 {
+                        text-align: left;
+                        font-size: $font-size-1 - 0.2;
+                        margin: $mg-1;
+                        margin-left: 0;
+                        margin-right: auto;
+                        color: #007cc3;
+                        font-weight: $font-weight-300;
+                        padding: $pd-2 0;
+                        span {
+                            color: $color-black;
+                            font-weight: $font-weight-bold;
+                        }
+                    }
+                    i {
+                        font-size: $font-size-5;
+                        color: $color-blue-100;
+                        transition: all 0.5s;
+                        font-weight: $font-weight-bold;
+                    }
+                    
+                }
+                ol {
+                    display: none;
+                    list-style: none;
+                    border-top: $border-3;
+                    li {
+                        font-size: $font-size-1 - 0.2;
+                        color: $color-black;
+                        font-weight: $font-weight-bold;
+                        padding: $pd-2;
+                    }
+                }
+            }
+        }
+    }
 }
